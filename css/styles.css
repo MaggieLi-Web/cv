@@ -1,0 +1,358 @@
+/* Global Section */
+body {
+  margin: 0;
+  font-family: serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.page-title {
+  font-size: 38px;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  padding: 8% 0 4%;
+}
+
+/* Top section */
+#top {
+  background-color: #f9f7e8;
+  color: #61bfad;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+#top hr {
+  width: 20em;
+  color: lightgrey;
+  border-style: none;
+  border-top: 5px double;
+  margin: 1.4px auto;
+}
+
+.main-title {
+  padding: 150px 0 10px;
+  color: #61bfad;
+  font-size: 80px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+
+#top p {
+  margin-top: 2%
+}
+
+.top-email {
+  font-size: 23px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #61bfad;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.top-email:hover {
+  color: #61bfad;
+  text-shadow: 2px 2px 2px silver;
+}
+
+/* Top - Menu button */
+.top-button {
+  position: fixed;
+  right: 1.5%;
+  top: 3%;
+  width: 12%;
+  z-index: 1;
+}
+
+.button-each {
+  border-radius: 0;
+  padding: 10%;
+  background-color: #e4ccb3;
+  font-family: monospace;
+  border: outset 2.5px #e4ccb3;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.button-each:hover {
+  box-shadow: 3px 3px 7px #b9a795;
+  font-size: 16px;
+  background-color: #e4ccb3;
+  border: outset 1.5px #e4ccb3;
+}
+
+.back-to-top-button {
+  position: fixed;
+  right: 1.5%;
+  bottom: 1%;
+  width: 12%;
+  z-index: 1;
+}
+
+.back-to-top {
+  font-size: 22px;
+  text-decoration: overline;
+  font-weight: 600;
+}
+
+.back-to-top:hover {
+  font-size: 26px;
+  text-decoration: overline;
+}
+
+@media screen and (max-width:1100px) {
+  .top-button {
+    display: none;
+  }
+}
+
+@media screen and (max-height:610px) {
+  .top-button {
+    display: none;
+  }
+}
+
+/* Menu when screen is small */
+.small-menu {
+  font-family: monospace;
+  position: fixed;
+  visibility: hidden;
+  right: 3%;
+  top: 3%;
+  z-index: 1;
+}
+
+@media screen and (max-width:1100px) {
+  .small-menu {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-height:610px) {
+  .small-menu {
+    visibility: visible;
+  }
+}
+
+.small-toggle {
+  background-color: #e4ccb3;
+  border: #e4ccb3;
+  font-weight: bold;
+}
+
+.small-dropdown {
+  background-color: #e4ccb3;
+  text-align: right;
+}
+
+.small-item {
+  color: white;
+  font-weight: bold;
+}
+
+.small-item:hover, .small-item:focus {
+  color: #61bfad;
+}
+
+.small-toggle:hover {
+  background-color: lightgrey;
+  border: lightgrey;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+  background-color: lightgrey;
+  border-color: lightgrey;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-secondary.dropdown-toggle:focus, .btn-secondary:focus {
+  background-color: lightgrey;
+  box-shadow: none;
+}
+
+.small-item:active {
+  background-color: transparent;
+}
+
+/* Education Section */
+#education {
+  background-color: #61bfad;
+  color: white;
+  padding-bottom: 7%;
+  text-align: center;
+}
+
+.education-each-school {
+  margin-bottom: 100px;
+}
+
+.education-school-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.education-major {
+  font-size: 18px;
+}
+
+.education-emphasis {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.education-place {
+  padding: 0 35%;
+}
+
+.education-location {
+  font-size: 15px;
+  float: left;
+}
+
+.education-date {
+  float: right;
+  font-size: 15px;
+}
+
+/* Intern Section */
+#intern {
+  background-color: #efe8d8;
+  color: #3b9a9c;
+  padding-bottom: 6%;
+  text-align: center;
+}
+
+.intern-each {
+  margin-bottom: 80px;
+}
+
+.intern-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.intern-company {
+  font-style: italic;
+  padding: 0 37% 2%;
+  font-size: 15px;
+}
+
+.intern-company-name {
+  float: left;
+}
+
+.intern-date {
+  float: right;
+}
+
+.intern-detail {
+  text-align: left;
+  line-height: 1.75;
+  padding: 0 33% 0 35%;
+}
+
+/* Volunteer Section  */
+#volunteer {
+  background-color: #61bfad;
+  color: white;
+  padding: 0 13% 6%;
+  text-align: center;
+}
+
+.volunteer-each {
+  margin-bottom: 60px;
+  padding: 0 4%;
+}
+
+.volunteer-line {
+  background-color: white;
+  width: 200px;
+}
+
+.volunteer-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.volunteer-organization {
+  font-style: italic;
+}
+
+.volunteer-date {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.volunteer-detail {
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #efe8d8;
+  color: #3b9a9c;
+  padding-bottom: 8%;
+  text-align: center;
+}
+
+.table-1 {
+  padding-left: 30%;
+  text-align: left;
+  display: inline-block;
+}
+
+.table-2 {
+  padding-right: 30%;
+  text-align: left;
+  display: inline-block;
+}
+
+td {
+  padding: 0 10% 10% 10%;
+}
+
+.star {
+  color: orange;
+}
+
+@media screen and (max-width:900px) {
+  .table-1, .table-2 {
+    padding: 0;
+  }
+}
+
+/* Project Section  */
+#project {
+  background-color: #61bfad;
+  color: white;
+  padding: 0 12% 7%;
+  text-align: center;
+}
+
+/* Footer Section */
+#footer {
+  background-color: #f9f7e8;
+  color: #3b9a9c;
+  padding: 5% 0 1%;
+  text-align: center;
+}
+
+.footer-icon {
+  color: #3b9a9c;
+  font-size: 20px;
+  padding: 0 2%;
+}
+
+.footer-icon:hover {
+  color: silver;
+}
+
+.footer-copyright {
+  padding-top: 2%;
+}
