@@ -86,6 +86,12 @@ a:hover {
   border: outset 1.5px #e4ccb3;
 }
 
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle {
+  border-color: lightgrey;
+}
+
+/* back to top button */
 .back-to-top-button {
   position: fixed;
   right: 1.5%;
